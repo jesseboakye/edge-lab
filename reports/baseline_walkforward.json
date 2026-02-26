@@ -1,0 +1,35 @@
+{
+  "window_count": 2,
+  "windows": [
+    {
+      "train": [
+        0,
+        10
+      ],
+      "test": [
+        10,
+        15
+      ],
+      "final_equity": 998.8945,
+      "total_return": -0.0011055000000000064,
+      "sharpe": -8.469376780509345
+    },
+    {
+      "train": [
+        5,
+        15
+      ],
+      "test": [
+        15,
+        20
+      ],
+      "final_equity": 1001.9475,
+      "total_return": 0.001947499999999991,
+      "sharpe": 13.035589952192213
+    }
+  ],
+  "aggregate": {
+    "mean_total_return": 0.00042099999999999224,
+    "mean_sharpe": 2.283106585841434
+  }
+}

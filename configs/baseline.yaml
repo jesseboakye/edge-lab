@@ -1,0 +1,30 @@
+prices:
+  - 100
+  - 101
+  - 102
+  - 103
+  - 104
+  - 103
+  - 102
+  - 103
+  - 104
+  - 105
+  - 106
+  - 107
+  - 106
+  - 105
+  - 104
+  - 103
+  - 104
+  - 105
+  - 106
+  - 107
+strategy:
+  name: moving_average
+  params:
+    short_window: 2
+    long_window: 3
+initial_cash: 1000
+fee_bps: 5
+slippage_bps: 0
+risk_free_rate: 0.0

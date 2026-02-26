@@ -3,6 +3,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
+import yaml
+
 
 @dataclass(frozen=True)
 class StrategyConfig:
@@ -21,7 +23,18 @@ class BacktestConfig:
 
 
 def load_config(path: str | Path) -> BacktestConfig:
-    payload = json.loads(Path(path).read_text(encoding="utf-8"))
+    path = Path(path)
+    raw = path.read_text(encoding="utf-8")
+
+    # Default to YAML; JSON remains supported.
+    suffix = path.suffix.lower()
+    if suffix in {".yaml", ".yml"}:
+        payload = yaml.safe_load(raw) or {}
+    elif suffix == ".json":
+        payload = json.loads(raw)
+    else:
+        # Fallback parser: YAML handles JSON syntax too.
+        payload = yaml.safe_load(raw) or {}
 
     strategy_raw = payload.get("strategy") or {}
     strategy = StrategyConfig(

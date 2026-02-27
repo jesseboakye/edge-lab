@@ -1,0 +1,18 @@
+{
+  "entries": [
+    {
+      "run_id": "77f777e2-b818-4ad4-9124-62d7cce19ed3",
+      "run_timestamp_utc": "2026-02-27T03:06:00.285700+00:00",
+      "config_hash": "56920c4ce9f64c7c6d1885c1c9e746c17328bbbcc56bb66bfc3f849e384b6fe6",
+      "git_commit": "3e8d2677e1fef142ec27872371a4ad91bb6a3ce9",
+      "dataset_id": "baseline-dataset-v1",
+      "holdout_tag": "vaulted-holdout-v1",
+      "holdout_range": [
+        16,
+        20
+      ],
+      "mode": "final",
+      "notes": "cost-stress"
+    }
+  ]
+}

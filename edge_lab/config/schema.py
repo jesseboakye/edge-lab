@@ -14,7 +14,7 @@ class StrategyConfig:
 
 @dataclass(frozen=True)
 class CostConfig:
-    mode: str = "bps"  # bps | per_unit
+    mode: str = "bps"
     fee_bps: float = 5.0
     fee_per_unit: float = 0.0
     spread_per_unit: float = 0.0
@@ -42,10 +42,10 @@ class PerturbConfig:
 
 
 @dataclass(frozen=True)
-class HoldoutConfig:
-    enabled: bool = True
-    locked: bool = True
-    split_name: str = "vaulted-holdout-v1"
+class DataSplitConfig:
+    dev_range: list[int] = field(default_factory=lambda: [0, 16])
+    holdout_range: list[int] = field(default_factory=lambda: [16, 20])
+    holdout_tag: str = "vaulted-holdout-v1"
     dataset_id: str = "baseline-dataset-v1"
 
 
@@ -59,7 +59,7 @@ class BacktestConfig:
     sizing: SizingConfig = field(default_factory=SizingConfig)
     stability: StabilityConfig = field(default_factory=StabilityConfig)
     perturb: PerturbConfig = field(default_factory=PerturbConfig)
-    holdout: HoldoutConfig = field(default_factory=HoldoutConfig)
+    data: DataSplitConfig = field(default_factory=DataSplitConfig)
 
 
 def _parse(path: Path) -> dict[str, Any]:
@@ -111,12 +111,12 @@ def load_config(path: str | Path) -> BacktestConfig:
         seeds=list(perturb_raw.get("seeds", [11, 23, 47])),
     )
 
-    holdout_raw = payload.get("holdout") or {}
-    holdout = HoldoutConfig(
-        enabled=bool(holdout_raw.get("enabled", True)),
-        locked=bool(holdout_raw.get("locked", True)),
-        split_name=str(holdout_raw.get("split_name", "vaulted-holdout-v1")),
-        dataset_id=str(holdout_raw.get("dataset_id", "baseline-dataset-v1")),
+    data_raw = payload.get("data") or {}
+    data = DataSplitConfig(
+        dev_range=list(data_raw.get("dev_range", [0, 16])),
+        holdout_range=list(data_raw.get("holdout_range", [16, 20])),
+        holdout_tag=str(data_raw.get("holdout_tag", "vaulted-holdout-v1")),
+        dataset_id=str(data_raw.get("dataset_id", "baseline-dataset-v1")),
     )
 
     return BacktestConfig(
@@ -128,5 +128,5 @@ def load_config(path: str | Path) -> BacktestConfig:
         sizing=sizing,
         stability=stability,
         perturb=perturb,
-        holdout=holdout,
+        data=data,
     )

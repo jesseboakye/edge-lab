@@ -1,16 +1,19 @@
 {
   "schema": "edge_lab.cost_stress.v2",
   "metadata": {
-    "run_timestamp_utc": "2026-02-27T02:27:04.703557+00:00",
-    "config_hash": "f8e7fef4ff3f9c3b0bcc7a7574cf685bd111eae62233b6d36295f455ce92b017",
-    "git_commit": "3f1a2776561eb2cb5d86d8d65f9f52012ab0e2e7",
+    "run_timestamp_utc": "2026-02-27T03:06:00.316913+00:00",
+    "config_hash": "56920c4ce9f64c7c6d1885c1c9e746c17328bbbcc56bb66bfc3f849e384b6fe6",
+    "git_commit": "3e8d2677e1fef142ec27872371a4ad91bb6a3ce9",
     "holdout_tag": "vaulted-holdout-v1",
     "dataset_id": "baseline-dataset-v1",
     "seeds": [
       11,
       23,
       47
-    ]
+    ],
+    "run_mode": "final",
+    "holdout_enforced": true,
+    "holdout_ledger_entry_id": "77f777e2-b818-4ad4-9124-62d7cce19ed3"
   },
   "results": [
     {
@@ -56,14 +59,14 @@
       "mode": "bps",
       "fee_bps": 10.0,
       "fee_per_unit": 0.0,
-      "slippage_entry_bps": 3.0,
-      "slippage_exit_bps": 8.0,
+      "slippage_entry_bps": 5.0,
+      "slippage_exit_bps": 10.0,
       "metrics": {
-        "total_return": 0.0022231722999999873,
-        "max_drawdown": -0.002319535884916886,
-        "sharpe": 2.3189439272527266
+        "total_return": 0.002119551500000057,
+        "max_drawdown": -0.0023615742671590618,
+        "sharpe": 2.1979162997284076
       },
-      "final_equity": 1002.2231723
+      "final_equity": 1002.1195515000001
     },
     {
       "mode": "per_unit",

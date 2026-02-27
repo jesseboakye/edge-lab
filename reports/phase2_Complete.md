@@ -6,18 +6,26 @@ Phase 2 robustness outputs generated:
 - `reports/robustness_perturbation.json`
 - `reports/STABILITY.md`
 
-## Coverage vs requested goals
-- Cost stress: 5/10/20 bps + asymmetry toggle case included
-- Regime split: realized-vol quantile + drawdown stress definitions implemented
-- Feature perturbation: systematic noise levels + seeds + fragility index
-- Rolling stability: precommitted collapse criteria + summary
-- Vaulted holdout: defined/locked via metadata tags (`holdout_tag`)
-- Repro metadata: config hash, commit, seeds, dataset id
+Vault enforcement deliverables:
+- `reports/phase2_freeze.json`
+- `reports/holdout_ledger.json`
 
-## Reproducibility metadata fields now present in reports
-- `config_hash`
-- `git_commit`
-- `seeds`
-- `dataset_id`
-- `holdout_tag`
-- `run_timestamp_utc`
+## Vault enforced ✅
+Implemented workflow enforcement (not tag-only):
+1) Data split contract in config:
+   - `data.dev_range`
+   - `data.holdout_range`
+   - `data.holdout_tag`
+   - dev mode hard-fails on overlap
+2) Freeze gate for final mode:
+   - requires `reports/phase2_freeze.json` (or `reports/freeze.json`)
+   - validates `config_hash`, `git_commit`, `dataset_id`, `holdout_range`, `created_timestamp_utc`
+3) Append-only holdout ledger:
+   - writes `reports/holdout_ledger.json`
+   - blocks duplicate final runs for same `{holdout_tag, dataset_id, config_hash}`
+4) CLI mode switch:
+   - `--mode {dev,final}` default `dev`
+5) Reporting fields:
+   - `holdout_enforced`
+   - `run_mode`
+   - `holdout_ledger_entry_id` (final)

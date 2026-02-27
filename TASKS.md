@@ -19,10 +19,10 @@
 - [x] Re-run cost stress under both cost modes
 
 ## Robustness (Phase 2)
-- [ ] Cost stress tests (5/10/20 bps)
-- [ ] Regime split evaluation (crash vs low-vol periods)
-- [ ] Feature perturbation/noise tests
-- [ ] Rolling-window stability report (explicit collapse flag)
+- [x] Cost stress tests (5/10/20 bps)
+- [x] Regime split evaluation (stress vs calm periods)
+- [x] Feature perturbation/noise tests
+- [x] Rolling-window stability report (explicit collapse flag)
 
 ## Deferred (Post-Phase 2)
 - [ ] Optional Kalshi/futures adapter work

@@ -11,6 +11,7 @@ from edge_lab.reporting.metadata import config_hash, run_metadata
 from edge_lab.reporting.vault import append_holdout_ledger, enforce_freeze, ensure_dev_excludes_holdout
 from edge_lab.robustness.perturb import add_noise
 from edge_lab.robustness.regimes import split_regimes
+from edge_lab.robustness.stability import evaluate_stability_gate
 from edge_lab.strategies.moving_average import MovingAverageStrategy
 from edge_lab.walkforward import run_walkforward
 
@@ -225,7 +226,24 @@ def cmd_walkforward(config_path: str, output_path: str, train: int, test: int, s
     )
     payload["schema"] = "edge_lab.walkforward.v2"
     payload["metadata"] = _metadata(cfg, mode, ledger_id, {"train": train, "test": test, "step": step})
-    payload["collapse_pass"] = payload["aggregate"]["collapse_ratio"] <= cfg.stability.max_collapse_ratio
+
+    gate = evaluate_stability_gate(
+        observed_windows=payload["window_count"],
+        observed_oos_days=payload["aggregate"].get("oos_days_total", 0),
+        trades_total=payload["aggregate"].get("trades_total", 0),
+        trades_per_window=[w.get("trade_count", 0) for w in payload["windows"]],
+        collapse_ratio=payload["aggregate"]["collapse_ratio"],
+        min_windows=cfg.stability.min_windows,
+        min_oos_days=cfg.stability.min_oos_days,
+        min_trades_total=cfg.stability.min_trades_total,
+        min_trades_per_window=cfg.stability.min_trades_per_window,
+        max_collapse_ratio=cfg.stability.max_collapse_ratio,
+    )
+    payload["validity"] = gate["validity"]
+    payload["status"] = gate["status"]
+    payload["promotable"] = gate["promotable"]
+    payload["collapse_pass"] = payload["aggregate"]["collapse_ratio"] < cfg.stability.max_collapse_ratio
+
     Path(output_path).write_text(json.dumps(payload, indent=2), encoding="utf-8")
     return 0
 

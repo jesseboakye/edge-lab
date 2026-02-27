@@ -10,6 +10,8 @@
         10,
         15
       ],
+      "oos_days": 5,
+      "trade_count": 2,
       "final_equity": 998.8945,
       "total_return": -0.0011055000000000064,
       "sharpe": -8.469376780509345,
@@ -24,6 +26,8 @@
         15,
         20
       ],
+      "oos_days": 5,
+      "trade_count": 1,
       "final_equity": 1001.9475,
       "total_return": 0.001947499999999991,
       "sharpe": 13.035589952192213,
@@ -34,13 +38,15 @@
     "mean_total_return": 0.00042099999999999224,
     "mean_sharpe": 2.283106585841434,
     "collapse_count": 1,
-    "collapse_ratio": 0.5
+    "collapse_ratio": 0.5,
+    "oos_days_total": 10,
+    "trades_total": 3
   },
   "schema": "edge_lab.walkforward.v2",
   "metadata": {
-    "run_timestamp_utc": "2026-02-27T03:06:06.971133+00:00",
+    "run_timestamp_utc": "2026-02-27T03:17:27.962488+00:00",
     "config_hash": "f94227717c4946b0b4a94f17c2f46e5a193bfae57f59eb2b794f3ca1361ff1fd",
-    "git_commit": "3e8d2677e1fef142ec27872371a4ad91bb6a3ce9",
+    "git_commit": "e769aaa7b68ecf9390e591ff4676ce48a33588b5",
     "holdout_tag": "vaulted-holdout-v1",
     "dataset_id": "baseline-dataset-v1",
     "seeds": [
@@ -52,5 +58,27 @@
     "holdout_enforced": false,
     "holdout_ledger_entry_id": null
   },
-  "collapse_pass": true
+  "validity": {
+    "min_windows": 8,
+    "observed_windows": 2,
+    "min_oos_days": 120,
+    "observed_oos_days": 10,
+    "min_trades_total": 200,
+    "observed_trades_total": 3,
+    "min_trades_per_window": 20,
+    "observed_trades_per_window": [
+      2,
+      1
+    ],
+    "pass": false,
+    "failed_reasons": [
+      "INSUFFICIENT_WINDOWS",
+      "INSUFFICIENT_OOS_DAYS",
+      "INSUFFICIENT_TRADES_TOTAL",
+      "INSUFFICIENT_TRADES_PER_WINDOW"
+    ]
+  },
+  "status": "INVALID",
+  "promotable": false,
+  "collapse_pass": false
 }

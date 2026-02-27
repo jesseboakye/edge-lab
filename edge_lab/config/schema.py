@@ -33,6 +33,10 @@ class SizingConfig:
 class StabilityConfig:
     sharpe_floor: float = 0.0
     max_collapse_ratio: float = 0.5
+    min_windows: int = 8
+    min_oos_days: int = 120
+    min_trades_total: int = 200
+    min_trades_per_window: int = 20
 
 
 @dataclass(frozen=True)
@@ -103,6 +107,10 @@ def load_config(path: str | Path) -> BacktestConfig:
     stability = StabilityConfig(
         sharpe_floor=float(stability_raw.get("sharpe_floor", 0.0)),
         max_collapse_ratio=float(stability_raw.get("max_collapse_ratio", 0.5)),
+        min_windows=int(stability_raw.get("min_windows", 8)),
+        min_oos_days=int(stability_raw.get("min_oos_days", 120)),
+        min_trades_total=int(stability_raw.get("min_trades_total", 200)),
+        min_trades_per_window=int(stability_raw.get("min_trades_per_window", 20)),
     )
 
     perturb_raw = payload.get("perturb") or {}

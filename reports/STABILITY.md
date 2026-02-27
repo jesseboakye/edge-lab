@@ -1,17 +1,26 @@
 # STABILITY
 
-## Precommitted collapse criteria
-- Sharpe floor per window: `0.0`
-- Maximum allowed collapse ratio: `0.5`
-- Collapse definition: window collapsed if `sharpe < sharpe_floor`
+## Validity checks
+- min_windows: required `8`, observed `2` → **FAIL**
+- min_oos_days: required `120`, observed `10` → **FAIL**
+- min_trades_total: required `200`, observed `3` → **FAIL**
+- min_trades_per_window: required `20`, observed `[2, 1]` → **FAIL**
 
-## Walk-forward summary (dev mode)
-- Windows: `2`
-- Collapse count: `1`
-- Collapse ratio: `0.5`
-- Collapse pass: `true`
+## Collapse evaluation
+- collapse_ratio: `0.5`
+- max_collapse_ratio: `0.5`
+- strict rule: collapse_ratio < max_collapse_ratio
+- collapse_pass: **false**
 
-## Vault workflow status
-- Holdout guardrail mode implemented: `--mode {dev,final}`
-- Dev mode hard-excludes holdout overlap by config contract
-- Final mode requires freeze file + ledger append
+## Final status
+- status: **INVALID**
+- promotable: **false**
+- reason codes:
+  - `INSUFFICIENT_WINDOWS`
+  - `INSUFFICIENT_OOS_DAYS`
+  - `INSUFFICIENT_TRADES_TOTAL`
+  - `INSUFFICIENT_TRADES_PER_WINDOW`
+
+Notes:
+- Collapse metrics are computed, but promotion is blocked when validity fails.
+- JSON source: `reports/robustness_walkforward.json`

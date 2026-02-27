@@ -65,6 +65,8 @@ def run_walkforward(
         row = {
             "train": [train_start, train_end],
             "test": [test_start, test_end],
+            "oos_days": (test_end - test_start),
+            "trade_count": len(result["trades"]),
             "final_equity": result["final_equity"],
             "total_return": total_return(result["equity_curve"]),
             "sharpe": sharpe_ratio(returns, risk_free_rate=risk_free_rate),
@@ -75,6 +77,8 @@ def run_walkforward(
     mean_total_return = mean([r["total_return"] for r in rows]) if rows else 0.0
     mean_sharpe = mean([r["sharpe"] for r in rows]) if rows else 0.0
     collapse_count = sum(1 for r in rows if r["collapsed"])
+    oos_days_total = sum(r["oos_days"] for r in rows)
+    trades_total = sum(r["trade_count"] for r in rows)
 
     return {
         "window_count": len(rows),
@@ -84,5 +88,7 @@ def run_walkforward(
             "mean_sharpe": mean_sharpe,
             "collapse_count": collapse_count,
             "collapse_ratio": (collapse_count / len(rows)) if rows else 0.0,
+            "oos_days_total": oos_days_total,
+            "trades_total": trades_total,
         },
     }

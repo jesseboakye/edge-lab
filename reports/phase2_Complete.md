@@ -10,22 +10,15 @@ Vault enforcement deliverables:
 - `reports/phase2_freeze.json`
 - `reports/holdout_ledger.json`
 
-## Vault enforced ✅
-Implemented workflow enforcement (not tag-only):
-1) Data split contract in config:
-   - `data.dev_range`
-   - `data.holdout_range`
-   - `data.holdout_tag`
-   - dev mode hard-fails on overlap
-2) Freeze gate for final mode:
-   - requires `reports/phase2_freeze.json` (or `reports/freeze.json`)
-   - validates `config_hash`, `git_commit`, `dataset_id`, `holdout_range`, `created_timestamp_utc`
-3) Append-only holdout ledger:
-   - writes `reports/holdout_ledger.json`
-   - blocks duplicate final runs for same `{holdout_tag, dataset_id, config_hash}`
-4) CLI mode switch:
-   - `--mode {dev,final}` default `dev`
-5) Reporting fields:
-   - `holdout_enforced`
-   - `run_mode`
-   - `holdout_ledger_entry_id` (final)
+## Stability gate semantics (updated)
+- Gate now supports final status states: `PASS` / `FAIL` / `INVALID`
+- Validity thresholds are config-governed:
+  - `min_windows` (default 8)
+  - `min_oos_days` (default 120)
+  - `min_trades_total` (default 200)
+  - `min_trades_per_window` (default 20)
+- If any validity check fails, status is `INVALID` and `promotable=false` regardless of collapse ratio
+- Collapse pass rule is strict: `collapse_ratio < max_collapse_ratio`
+- JSON output includes: `validity`, `status`, `promotable`
+
+Current baseline status: **INVALID** (insufficient evidence volume), so not promotable.

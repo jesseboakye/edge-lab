@@ -9,6 +9,30 @@ class Signal(str, Enum):
 
 
 @dataclass(frozen=True)
+class FairValueQuote:
+    probability_up: float
+    fair_price: float
+    edge_vs_market: float
+    expected_value_per_unit: float
+
+
+def probability_to_fair_price(probability_up: float, payout_if_up: float = 1.0, payout_if_down: float = 0.0) -> float:
+    p = max(0.0, min(1.0, float(probability_up)))
+    return p * float(payout_if_up) + (1.0 - p) * float(payout_if_down)
+
+
+def fair_value_quote(probability_up: float, market_price: float, payout_if_up: float = 1.0, payout_if_down: float = 0.0) -> FairValueQuote:
+    fair = probability_to_fair_price(probability_up, payout_if_up, payout_if_down)
+    edge = fair - float(market_price)
+    return FairValueQuote(
+        probability_up=float(probability_up),
+        fair_price=fair,
+        edge_vs_market=edge,
+        expected_value_per_unit=edge,
+    )
+
+
+@dataclass(frozen=True)
 class Candle:
     ts: str
     open: float

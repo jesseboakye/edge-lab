@@ -25,6 +25,14 @@ strategy:
     short_window: 2
     long_window: 3
 initial_cash: 1000
-fee_bps: 5
-slippage_bps: 0
 risk_free_rate: 0.0
+cost:
+  mode: bps
+  fee_bps: 5
+  slippage_entry_bps: 0
+  slippage_exit_bps: 0
+  spread_per_unit: 0
+sizing:
+  method: fractional_kelly
+  kelly_fraction: 0.25
+  max_exposure_frac: 0.2

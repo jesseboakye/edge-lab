@@ -1,0 +1,71 @@
+{
+  "schema": "edge_lab.cost_stress.v1",
+  "results": [
+    {
+      "mode": "bps",
+      "fee_bps": 5.0,
+      "fee_per_unit": 0.0,
+      "metrics": {
+        "total_return": 0.0027409999999998716,
+        "max_drawdown": -0.0020990261715158843,
+        "sharpe": 2.958927905493816
+      },
+      "final_equity": 1002.7409999999999
+    },
+    {
+      "mode": "bps",
+      "fee_bps": 10.0,
+      "fee_per_unit": 0.0,
+      "metrics": {
+        "total_return": 0.0024819999999999708,
+        "max_drawdown": -0.0022040666525713144,
+        "sharpe": 2.64144091612774
+      },
+      "final_equity": 1002.482
+    },
+    {
+      "mode": "bps",
+      "fee_bps": 20.0,
+      "fee_per_unit": 0.0,
+      "metrics": {
+        "total_return": 0.0019640000000000555,
+        "max_drawdown": -0.0024142444412521276,
+        "sharpe": 2.029267397866434
+      },
+      "final_equity": 1001.964
+    },
+    {
+      "mode": "per_unit",
+      "fee_bps": 5.0,
+      "fee_per_unit": 0.01,
+      "metrics": {
+        "total_return": 0.0029500000000000455,
+        "max_drawdown": -0.0020159881835147874,
+        "sharpe": 3.220290217197659
+      },
+      "final_equity": 1002.95
+    },
+    {
+      "mode": "per_unit",
+      "fee_bps": 5.0,
+      "fee_per_unit": 0.02,
+      "metrics": {
+        "total_return": 0.002900000000000091,
+        "max_drawdown": -0.002035968781811976,
+        "sharpe": 3.157350561988211
+      },
+      "final_equity": 1002.9000000000001
+    },
+    {
+      "mode": "per_unit",
+      "fee_bps": 5.0,
+      "fee_per_unit": 0.05,
+      "metrics": {
+        "total_return": 0.0027500000000002275,
+        "max_drawdown": -0.0020959129697089764,
+        "sharpe": 2.9700607603018603
+      },
+      "final_equity": 1002.7500000000002
+    }
+  ]
+}

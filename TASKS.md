@@ -10,6 +10,14 @@
 - [x] Add walk-forward validation module + tests
 - [ ] Add deterministic artifact outputs (metrics/trades/equity)
 
+## Fair Value + EV-Aware Backbone (Inserted)
+- [x] Implement probability -> fair value utilities
+- [x] Add unified execution cost engine (bps + per_unit)
+- [x] Add spread + asymmetric entry/exit slippage handling
+- [x] Add config-driven cost mode switching in backtester
+- [x] Add fractional Kelly sizing utilities with exposure cap
+- [x] Re-run cost stress under both cost modes
+
 ## Robustness (Phase 2)
 - [ ] Cost stress tests (5/10/20 bps)
 - [ ] Regime split evaluation (crash vs low-vol periods)

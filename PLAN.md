@@ -89,6 +89,16 @@ Defer optional integrations (Kalshi/futures adapters) until after backbone + Pha
 
 ## 5) Milestones
 
+### M1.5 — Fair Value + EV-Aware Execution/Sizing (inserted)
+- Add probability -> fair price modeling utilities
+- Add unified cost engine with mode switch (`bps`, `per_unit`)
+- Support spread and asymmetric entry/exit slippage
+- Wire cost mode switching through config into backtester
+- Add fractional Kelly sizing utilities + exposure caps
+- Re-run cost stress under both cost modes
+
+**Deliverable:** EV-aware backbone before ML/integrations.
+
 ### M0 — Foundation (Current Scaffold → Stable Baseline)
 - Finalize package layout
 - Add `pyproject.toml` and tooling config

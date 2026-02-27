@@ -3,7 +3,7 @@ import json
 from edge_lab.cli import main
 
 
-def test_cli_backtest_writes_output(tmp_path):
+def test_cli_cost_stress_writes_output(tmp_path):
     cfg = tmp_path / "config.yaml"
     out = tmp_path / "result.json"
     cfg.write_text(
@@ -19,8 +19,8 @@ initial_cash: 1000
         encoding="utf-8",
     )
 
-    code = main(["backtest", "--config", str(cfg), "--output", str(out)])
+    code = main(["cost-stress", "--config", str(cfg), "--output", str(out)])
     assert code == 0
     payload = json.loads(out.read_text(encoding="utf-8"))
-    assert "metrics" in payload
-    assert "cost_mode" in payload
+    assert payload["schema"].startswith("edge_lab.cost_stress")
+    assert "metadata" in payload

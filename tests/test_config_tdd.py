@@ -20,8 +20,8 @@ strategy:
     cfg = load_config(config_path)
     assert isinstance(cfg, BacktestConfig)
     assert cfg.initial_cash == 1000.0
-    assert cfg.fee_bps == 5.0
-    assert cfg.slippage_bps == 0.0
+    assert cfg.cost.fee_bps == 5.0
+    assert cfg.cost.slippage_entry_bps == 0.0
 
 
 def test_load_config_reads_explicit_values_json(tmp_path):
@@ -42,6 +42,6 @@ def test_load_config_reads_explicit_values_json(tmp_path):
 
     cfg = load_config(config_path)
     assert cfg.initial_cash == 5000
-    assert cfg.fee_bps == 10
-    assert cfg.slippage_bps == 2
+    assert cfg.cost.fee_bps == 10
+    assert cfg.cost.slippage_entry_bps == 2
     assert cfg.risk_free_rate == 0.0001

@@ -1,25 +1,113 @@
 {
-  "schema": "edge_lab.perturbation.v1",
+  "schema": "edge_lab.perturbation.v2",
   "metadata": {
-    "run_timestamp_utc": "2026-02-27T02:15:56.251690+00:00",
-    "config_hash": "ba8acb1922a0ad72d8dcf7eeb86972b0a28ae45682d6598e723ee8d433e996d8",
-    "git_commit": "977ca29ee7f2c94505f7c663b5a797936b24cab3",
-    "holdout_tag": "vaulted-holdout-v1"
+    "run_timestamp_utc": "2026-02-27T02:27:05.267624+00:00",
+    "config_hash": "f8e7fef4ff3f9c3b0bcc7a7574cf685bd111eae62233b6d36295f455ce92b017",
+    "git_commit": "3f1a2776561eb2cb5d86d8d65f9f52012ab0e2e7",
+    "holdout_tag": "vaulted-holdout-v1",
+    "dataset_id": "baseline-dataset-v1",
+    "seeds": [
+      11,
+      23,
+      47
+    ]
   },
-  "base": {
-    "final_equity": 1002.7409999999999,
-    "metrics": {
-      "total_return": 0.0027409999999998716,
-      "max_drawdown": -0.0020990261715158843,
-      "sharpe": 2.958927905493816
+  "runs": [
+    {
+      "eps": 0.0005,
+      "seed": 11,
+      "final_equity": 1002.7282535979226,
+      "metrics": {
+        "total_return": 0.0027282535979226167,
+        "max_drawdown": -0.0020938725783403943,
+        "sharpe": 2.974923256738185
+      }
+    },
+    {
+      "eps": 0.0005,
+      "seed": 23,
+      "final_equity": 1002.7913962339425,
+      "metrics": {
+        "total_return": 0.002791396233942464,
+        "max_drawdown": -0.0021056817414108284,
+        "sharpe": 3.0031681508268866
+      }
+    },
+    {
+      "eps": 0.0005,
+      "seed": 47,
+      "final_equity": 1002.8126835059334,
+      "metrics": {
+        "total_return": 0.0028126835059333645,
+        "max_drawdown": -0.0021140769088291095,
+        "sharpe": 3.0247396088728102
+      }
+    },
+    {
+      "eps": 0.001,
+      "seed": 11,
+      "final_equity": 1002.7155071958451,
+      "metrics": {
+        "total_return": 0.0027155071958451346,
+        "max_drawdown": -0.002088718712750564,
+        "sharpe": 2.9863057615395783
+      }
+    },
+    {
+      "eps": 0.001,
+      "seed": 23,
+      "final_equity": 1002.841792467885,
+      "metrics": {
+        "total_return": 0.0028417924678850568,
+        "max_drawdown": -0.0021124541845509745,
+        "sharpe": 3.0452951458011146
+      }
+    },
+    {
+      "eps": 0.001,
+      "seed": 47,
+      "final_equity": 1002.8843670118667,
+      "metrics": {
+        "total_return": 0.0028843670118667434,
+        "max_drawdown": -0.0021292441455076088,
+        "sharpe": 3.0851665480904304
+      }
+    },
+    {
+      "eps": 0.002,
+      "seed": 11,
+      "final_equity": 1002.6900143916907,
+      "metrics": {
+        "total_return": 0.002690014391690738,
+        "max_drawdown": -0.0020784101642406867,
+        "sharpe": 2.994075140276436
+      }
+    },
+    {
+      "eps": 0.002,
+      "seed": 23,
+      "final_equity": 1002.9425849357701,
+      "metrics": {
+        "total_return": 0.0029425849357701283,
+        "max_drawdown": -0.002125998853780898,
+        "sharpe": 3.1231062977712574
+      }
+    },
+    {
+      "eps": 0.002,
+      "seed": 47,
+      "final_equity": 1003.0277340237335,
+      "metrics": {
+        "total_return": 0.003027734023733501,
+        "max_drawdown": -0.002159577280246772,
+        "sharpe": 3.1894559985660647
+      }
     }
-  },
-  "perturbed": {
-    "final_equity": 1002.529951,
-    "metrics": {
-      "total_return": 0.0025299509999999826,
-      "max_drawdown": -0.0021010040482531637,
-      "sharpe": 2.7165011681148843
+  ],
+  "fragility": {
+    "overall": 0.00010518481911183378,
+    "per_feature": {
+      "price": 0.00010518481911183378
     }
   }
 }

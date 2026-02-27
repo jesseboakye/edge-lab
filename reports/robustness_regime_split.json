@@ -1,29 +1,35 @@
 {
-  "schema": "edge_lab.regime_split.v1",
+  "schema": "edge_lab.regime_split.v2",
   "metadata": {
-    "run_timestamp_utc": "2026-02-27T02:15:55.986059+00:00",
-    "config_hash": "2e89b0011b569e97a8ec6e0282cb73b56ed2ed6ec7c4101433058cbdca975fe2",
-    "git_commit": "977ca29ee7f2c94505f7c663b5a797936b24cab3",
-    "holdout_tag": "vaulted-holdout-v1"
+    "run_timestamp_utc": "2026-02-27T02:27:05.001202+00:00",
+    "config_hash": "f8e7fef4ff3f9c3b0bcc7a7574cf685bd111eae62233b6d36295f455ce92b017",
+    "git_commit": "3f1a2776561eb2cb5d86d8d65f9f52012ab0e2e7",
+    "holdout_tag": "vaulted-holdout-v1",
+    "dataset_id": "baseline-dataset-v1",
+    "seeds": [
+      11,
+      23,
+      47
+    ]
   },
   "regimes": {
     "calm": {
-      "count": 12,
+      "count": 11,
       "metrics": {
-        "total_return": 0.0038444999999999252,
-        "max_drawdown": -0.0020962220192460275,
-        "sharpe": 5.3559790036873745
+        "total_return": 0.003843499999999949,
+        "max_drawdown": -0.0020951311957124255,
+        "sharpe": 5.161205479130766
       },
-      "final_equity": 1003.8444999999999
+      "final_equity": 1003.8435
     },
     "stress": {
-      "count": 8,
+      "count": 9,
       "metrics": {
-        "total_return": 0.001947999999999979,
-        "max_drawdown": -0.0009970606651591109,
-        "sharpe": 5.826963150495076
+        "total_return": -0.0011035000000000537,
+        "max_drawdown": -0.003045567235026202,
+        "sharpe": -2.1933199818455082
       },
-      "final_equity": 1001.948
+      "final_equity": 998.8965
     }
   }
 }

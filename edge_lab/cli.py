@@ -13,6 +13,8 @@ from edge_lab.robustness.perturb import add_noise
 from edge_lab.robustness.regimes import split_regimes
 from edge_lab.robustness.stability import evaluate_stability_gate
 from edge_lab.strategies.churn import ChurnStrategy
+from edge_lab.strategies.ev_threshold import EVThresholdStrategy
+from edge_lab.strategies.intraday_mispricing_v1 import IntradayMispricingV1
 from edge_lab.strategies.moving_average import MovingAverageStrategy
 from edge_lab.walkforward import run_walkforward
 
@@ -33,6 +35,10 @@ def _build_strategy(cfg):
         return MovingAverageStrategy(**cfg.params)
     if cfg.name == "churn":
         return ChurnStrategy()
+    if cfg.name == "ev_threshold":
+        return EVThresholdStrategy(**cfg.params)
+    if cfg.name == "intraday_mispricing_v1":
+        return IntradayMispricingV1(**cfg.params)
     raise ValueError(f"Unknown strategy: {cfg.name}")
 
 

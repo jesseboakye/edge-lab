@@ -1,0 +1,16 @@
+{
+  "schema": "edge_lab.phase3b_param_sweep_summary.v1",
+  "experiments": {
+    "E1": {
+      "config": "configs\\stability_intraday_mispricing_spy.yaml",
+      "report": "reports/robustness_walkforward_intraday_mispricing_spy.json",
+      "status": "INVALID",
+      "promotable": false
+    },
+    "E2": {
+      "report": "reports/robustness_walkforward_intraday_mispricing_basket.json",
+      "status": "PASS",
+      "promotable": true
+    }
+  }
+}

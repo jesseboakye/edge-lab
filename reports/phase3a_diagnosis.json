@@ -1,0 +1,80 @@
+{
+  "schema": "edge_lab.phase3a_diagnosis.v1",
+  "inputs": {
+    "walkforward_primary": "reports/robustness_walkforward_realdata.json",
+    "walkforward_validity_probe": "reports/robustness_walkforward_realdata_churn.json",
+    "cost_stress": "reports/robustness_cost_stress_realdata.json",
+    "regime_split": "reports/robustness_regime_split_realdata.json"
+  },
+  "phase2_outcome": {
+    "primary_status": "INVALID",
+    "primary_reasons": [
+      "INSUFFICIENT_TRADES_TOTAL",
+      "INSUFFICIENT_TRADES_PER_WINDOW"
+    ],
+    "validity_probe_status": "FAIL",
+    "validity_probe_note": "With high-turnover strategy, validity passes but collapse ratio fails"
+  },
+  "attribution": {
+    "cost_mode": {
+      "observation": "Performance degrades as bps costs rise (5->10->20 bps).",
+      "evidence": {
+        "bps_5_total_return": 0.3255586683,
+        "bps_20_total_return": 0.2916204732
+      }
+    },
+    "asymmetry": {
+      "observation": "Entry/exit asymmetry case underperforms symmetric 10 bps case.",
+      "evidence": {
+        "symmetric_10bps_total_return": 0.3142459366,
+        "asymmetric_10bps_5_10_total_return": 0.2971985302
+      }
+    },
+    "regime": {
+      "observation": "Stress regime Sharpe is materially weaker than calm regime.",
+      "evidence": {
+        "calm_sharpe": 2.4188026928,
+        "stress_sharpe": 0.6802604493
+      }
+    },
+    "turnover": {
+      "observation": "Low-turnover baseline fails validity evidence thresholds; high-turnover probe passes validity but fails collapse gate.",
+      "evidence": {
+        "baseline_trades_total": 158,
+        "baseline_min_trades_per_window": 1,
+        "churn_trades_total": 8820,
+        "churn_collapse_ratio": 0.6571428571
+      }
+    }
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "title": "Signal quality insufficient in stress regimes",
+      "expected_impact": "Reduce collapse windows and improve stress Sharpe",
+      "test_design": "Add regime-conditioned features and compare stress-only walkforward metrics",
+      "success_criterion": "stress_sharpe >= 1.0 and stress collapse ratio decreases"
+    },
+    {
+      "id": "H2",
+      "title": "Cost drag too high for current entry threshold",
+      "expected_impact": "Improve post-cost Sharpe under 10-20 bps",
+      "test_design": "Add EV hurdle = expected edge - estimated cost > 0 before entry",
+      "success_criterion": "10/20 bps robustness retains non-negative OOS total return"
+    },
+    {
+      "id": "H3",
+      "title": "Turnover-control imbalance",
+      "expected_impact": "Find turnover band that satisfies validity and preserves stability",
+      "test_design": "Constrain trades with cooldown/min-signal-strength and rerun walkforward",
+      "success_criterion": "validity PASS with collapse_ratio < threshold"
+    }
+  ],
+  "phase3_entry_criteria": {
+    "must_hold": [
+      "validity PASS",
+      "collapse_ratio < max_collapse_ratio",
+      "oos consistency improved vs baseline"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "profiles": [
+    {
+      "profile": {
+        "name": "p1",
+        "min_edge_bps": 6.0,
+        "cooldown_bars": 2
+      },
+      "status": "INVALID",
+      "promotable": false,
+      "collapse_ratio": 0.38571428571428573,
+      "trades_total": 150,
+      "min_trades_window": 1,
+      "failed_reasons": [
+        "INSUFFICIENT_TRADES_TOTAL",
+        "INSUFFICIENT_TRADES_PER_WINDOW"
+      ]
+    },
+    {
+      "profile": {
+        "name": "p2",
+        "min_edge_bps": 4.0,
+        "cooldown_bars": 2
+      },
+      "status": "INVALID",
+      "promotable": false,
+      "collapse_ratio": 0.37142857142857144,
+      "trades_total": 150,
+      "min_trades_window": 1,
+      "failed_reasons": [
+        "INSUFFICIENT_TRADES_TOTAL",
+        "INSUFFICIENT_TRADES_PER_WINDOW"
+      ]
+    },
+    {
+      "profile": {
+        "name": "p3",
+        "min_edge_bps": 4.0,
+        "cooldown_bars": 1
+      },
+      "status": "INVALID",
+      "promotable": false,
+      "collapse_ratio": 0.37142857142857144,
+      "trades_total": 150,
+      "min_trades_window": 1,
+      "failed_reasons": [
+        "INSUFFICIENT_TRADES_TOTAL",
+        "INSUFFICIENT_TRADES_PER_WINDOW"
+      ]
+    }
+  ]
+}

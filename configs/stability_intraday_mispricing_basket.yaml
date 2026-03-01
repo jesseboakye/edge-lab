@@ -1,0 +1,31 @@
+basket_symbols:
+  - SPY
+  - QQQ
+  - IWM
+  - XLK
+  - XLF
+  - XLE
+  - XLV
+  - XLY
+  - XLP
+  - XLI
+  - XLU
+strategy:
+  name: intraday_mispricing_v1
+  params:
+    mode: mean_reversion
+    z_lookback: 30
+    z_entry: 1.0
+    z_exit: 0.25
+    max_hold_bars: 20
+    time_stop: 24
+    max_trades_per_day: 30
+    min_time_between_trades_bars: 1
+    cooldown_bars: 0
+walkforward:
+  train: 1000
+  test: 200
+  step: 100
+cost:
+  mode: bps
+  fee_bps: 5

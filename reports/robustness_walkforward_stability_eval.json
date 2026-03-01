@@ -1,0 +1,198 @@
+{
+  "window_count": 9,
+  "windows": [
+    {
+      "train": [
+        0,
+        60
+      ],
+      "test": [
+        60,
+        90
+      ],
+      "oos_days": 30,
+      "trade_count": 29,
+      "final_equity": 984.5424999999998,
+      "total_return": -0.015457500000000209,
+      "sharpe": -16.647143281685683,
+      "collapsed": true
+    },
+    {
+      "train": [
+        20,
+        80
+      ],
+      "test": [
+        80,
+        110
+      ],
+      "oos_days": 30,
+      "trade_count": 29,
+      "final_equity": 984.5424999999998,
+      "total_return": -0.015457500000000209,
+      "sharpe": -16.647143281685683,
+      "collapsed": true
+    },
+    {
+      "train": [
+        40,
+        100
+      ],
+      "test": [
+        100,
+        130
+      ],
+      "oos_days": 30,
+      "trade_count": 29,
+      "final_equity": 984.5424999999998,
+      "total_return": -0.015457500000000209,
+      "sharpe": -16.647143281685683,
+      "collapsed": true
+    },
+    {
+      "train": [
+        60,
+        120
+      ],
+      "test": [
+        120,
+        150
+      ],
+      "oos_days": 30,
+      "trade_count": 29,
+      "final_equity": 984.5424999999998,
+      "total_return": -0.015457500000000209,
+      "sharpe": -16.647143281685683,
+      "collapsed": true
+    },
+    {
+      "train": [
+        80,
+        140
+      ],
+      "test": [
+        140,
+        170
+      ],
+      "oos_days": 30,
+      "trade_count": 29,
+      "final_equity": 984.5424999999998,
+      "total_return": -0.015457500000000209,
+      "sharpe": -16.647143281685683,
+      "collapsed": true
+    },
+    {
+      "train": [
+        100,
+        160
+      ],
+      "test": [
+        160,
+        190
+      ],
+      "oos_days": 30,
+      "trade_count": 29,
+      "final_equity": 984.5424999999998,
+      "total_return": -0.015457500000000209,
+      "sharpe": -16.647143281685683,
+      "collapsed": true
+    },
+    {
+      "train": [
+        120,
+        180
+      ],
+      "test": [
+        180,
+        210
+      ],
+      "oos_days": 30,
+      "trade_count": 29,
+      "final_equity": 984.5424999999998,
+      "total_return": -0.015457500000000209,
+      "sharpe": -16.647143281685683,
+      "collapsed": true
+    },
+    {
+      "train": [
+        140,
+        200
+      ],
+      "test": [
+        200,
+        230
+      ],
+      "oos_days": 30,
+      "trade_count": 29,
+      "final_equity": 984.5424999999998,
+      "total_return": -0.015457500000000209,
+      "sharpe": -16.647143281685683,
+      "collapsed": true
+    },
+    {
+      "train": [
+        160,
+        220
+      ],
+      "test": [
+        220,
+        250
+      ],
+      "oos_days": 30,
+      "trade_count": 29,
+      "final_equity": 984.5424999999998,
+      "total_return": -0.015457500000000209,
+      "sharpe": -16.647143281685683,
+      "collapsed": true
+    }
+  ],
+  "aggregate": {
+    "mean_total_return": -0.015457500000000209,
+    "mean_sharpe": -16.647143281685683,
+    "collapse_count": 9,
+    "collapse_ratio": 1.0,
+    "oos_days_total": 270,
+    "trades_total": 261
+  },
+  "schema": "edge_lab.walkforward.v2",
+  "metadata": {
+    "run_timestamp_utc": "2026-03-01T01:53:06.610649+00:00",
+    "config_hash": "530225c1c094b256331c61a6e1adce2f11f2d609268d7ef7362e02d21316c136",
+    "git_commit": "7c5ce213d67dc1097add067a828e2956b46aea72",
+    "holdout_tag": "vaulted-holdout-v1",
+    "dataset_id": "baseline-dataset-v1",
+    "seeds": [
+      11,
+      23,
+      47
+    ],
+    "run_mode": "dev",
+    "holdout_enforced": false,
+    "holdout_ledger_entry_id": null
+  },
+  "validity": {
+    "min_windows": 8,
+    "observed_windows": 9,
+    "min_oos_days": 120,
+    "observed_oos_days": 270,
+    "min_trades_total": 200,
+    "observed_trades_total": 261,
+    "min_trades_per_window": 20,
+    "observed_trades_per_window": [
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29,
+      29
+    ],
+    "pass": true,
+    "failed_reasons": []
+  },
+  "status": "FAIL",
+  "promotable": false,
+  "collapse_pass": false
+}

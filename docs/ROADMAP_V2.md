@@ -33,11 +33,29 @@
   - run timestamp
   - data split identifiers
 
-## Phase 3 — ML Signal Layer
-- Feature pipeline + target labeling
-- Strict no-leakage fit/transform on train only
-- Evaluate in walk-forward + holdout
+## Phase 3 — Re-evaluated after Phase 2 Outcome (valid gate, FAIL)
+
+### Phase 3A — Failure Diagnosis (immediate)
+- Produce attribution report by regime, cost mode, turnover bucket, and rolling-window cohorts
+- Create hypothesis backlog with expected impact + test design + success criteria
+- Define promotion preconditions before full ML build:
+  - maintain validity PASS
+  - reduce collapse ratio below threshold
+  - improve OOS consistency
+
+### Phase 3B — ML Signal Development (conditional)
+- Build leakage-safe feature/label pipeline (fit on train, apply to test only)
+- Start with baseline probabilistic models and calibrated outputs
+- Integrate EV-aware execution policy:
+  - cost-aware entry threshold
+  - turnover controls
+  - fractional Kelly + exposure caps
+- Re-run full robustness suite unchanged for apples-to-apples comparison
+
+### Phase 3C — Final Holdout Decision
+- If Phase 3B robustness passes, run one vaulted holdout in `--mode final`
+- Record holdout ledger entry and make promote/reject decision
 
 ## Phase 4 — Optional Integrations (Deferred)
-- Only after Phase 2 and holdout gates pass
+- Only after Phase 3C holdout gate passes
 - Venue adapters (Kalshi/Polymarket/futures)

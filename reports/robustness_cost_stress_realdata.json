@@ -1,0 +1,111 @@
+{
+  "schema": "edge_lab.cost_stress.v2",
+  "metadata": {
+    "run_timestamp_utc": "2026-03-01T02:34:16.368441+00:00",
+    "config_hash": "0b6304b4213f410ef63e5df5f3135cde2e004e5c46abfd83ec3ede6c9be5436b",
+    "git_commit": "f73a35a52147f8cfc7c8725778ab4e70cfe99818",
+    "holdout_tag": "vaulted-holdout-v1",
+    "dataset_id": "stooq-spy-daily",
+    "seeds": [
+      11,
+      23,
+      47
+    ],
+    "run_mode": "dev",
+    "holdout_enforced": false,
+    "holdout_ledger_entry_id": null
+  },
+  "results": [
+    {
+      "mode": "bps",
+      "fee_bps": 5.0,
+      "fee_per_unit": 0.0,
+      "slippage_entry_bps": 0.0,
+      "slippage_exit_bps": 0.0,
+      "metrics": {
+        "total_return": 0.3255586683000006,
+        "max_drawdown": -0.11126581416099016,
+        "sharpe": 0.5000545243824721
+      },
+      "final_equity": 1325.5586683000006
+    },
+    {
+      "mode": "bps",
+      "fee_bps": 10.0,
+      "fee_per_unit": 0.0,
+      "slippage_entry_bps": 0.0,
+      "slippage_exit_bps": 0.0,
+      "metrics": {
+        "total_return": 0.31424593660000005,
+        "max_drawdown": -0.11339551290581289,
+        "sharpe": 0.4825448851674888
+      },
+      "final_equity": 1314.2459366
+    },
+    {
+      "mode": "bps",
+      "fee_bps": 20.0,
+      "fee_per_unit": 0.0,
+      "slippage_entry_bps": 0.0,
+      "slippage_exit_bps": 0.0,
+      "metrics": {
+        "total_return": 0.2916204732000001,
+        "max_drawdown": -0.11772003316497238,
+        "sharpe": 0.4475585720974975
+      },
+      "final_equity": 1291.6204732
+    },
+    {
+      "mode": "bps",
+      "fee_bps": 10.0,
+      "fee_per_unit": 0.0,
+      "slippage_entry_bps": 5.0,
+      "slippage_exit_bps": 10.0,
+      "metrics": {
+        "total_return": 0.2971985302193998,
+        "max_drawdown": -0.1166099685344616,
+        "sharpe": 0.4562337952926824
+      },
+      "final_equity": 1297.1985302193998
+    },
+    {
+      "mode": "per_unit",
+      "fee_bps": 5.0,
+      "fee_per_unit": 0.01,
+      "slippage_entry_bps": 0.0,
+      "slippage_exit_bps": 0.0,
+      "metrics": {
+        "total_return": 0.33585140000000135,
+        "max_drawdown": -0.10930594168489087,
+        "sharpe": 0.5159125520829847
+      },
+      "final_equity": 1335.8514000000014
+    },
+    {
+      "mode": "per_unit",
+      "fee_bps": 5.0,
+      "fee_per_unit": 0.02,
+      "slippage_entry_bps": 0.0,
+      "slippage_exit_bps": 0.0,
+      "metrics": {
+        "total_return": 0.33483140000000183,
+        "max_drawdown": -0.10945468390373368,
+        "sharpe": 0.5142571118309881
+      },
+      "final_equity": 1334.8314000000018
+    },
+    {
+      "mode": "per_unit",
+      "fee_bps": 5.0,
+      "fee_per_unit": 0.05,
+      "slippage_entry_bps": 0.0,
+      "slippage_exit_bps": 0.0,
+      "metrics": {
+        "total_return": 0.331771400000001,
+        "max_drawdown": -0.10990205335884237,
+        "sharpe": 0.5092938756808093
+      },
+      "final_equity": 1331.771400000001
+    }
+  ]
+}

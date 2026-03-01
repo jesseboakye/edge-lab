@@ -1,0 +1,1238 @@
+{
+  "window_count": 70,
+  "windows": [
+    {
+      "train": [
+        0,
+        756
+      ],
+      "test": [
+        756,
+        882
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 997.8805515500001,
+      "total_return": -0.002119448449999936,
+      "sharpe": -0.5106543422249759,
+      "collapsed": true
+    },
+    {
+      "train": [
+        63,
+        819
+      ],
+      "test": [
+        819,
+        945
+      ],
+      "oos_days": 126,
+      "trade_count": 2,
+      "final_equity": 996.0752964000001,
+      "total_return": -0.00392470359999993,
+      "sharpe": -0.7749784655773884,
+      "collapsed": true
+    },
+    {
+      "train": [
+        126,
+        882
+      ],
+      "test": [
+        882,
+        1008
+      ],
+      "oos_days": 126,
+      "trade_count": 2,
+      "final_equity": 992.2007274499999,
+      "total_return": -0.007799272550000068,
+      "sharpe": -1.607557769018815,
+      "collapsed": true
+    },
+    {
+      "train": [
+        189,
+        945
+      ],
+      "test": [
+        945,
+        1071
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1005.6184504,
+      "total_return": 0.005618450400000028,
+      "sharpe": 1.1051609526486488,
+      "collapsed": false
+    },
+    {
+      "train": [
+        252,
+        1008
+      ],
+      "test": [
+        1008,
+        1134
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1000.4321430499999,
+      "total_return": 0.00043214304999992235,
+      "sharpe": 0.08831108826501376,
+      "collapsed": false
+    },
+    {
+      "train": [
+        315,
+        1071
+      ],
+      "test": [
+        1071,
+        1197
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1007.5300589,
+      "total_return": 0.007530058899999972,
+      "sharpe": 1.3967028630344775,
+      "collapsed": false
+    },
+    {
+      "train": [
+        378,
+        1134
+      ],
+      "test": [
+        1134,
+        1260
+      ],
+      "oos_days": 126,
+      "trade_count": 2,
+      "final_equity": 999.7663354499999,
+      "total_return": -0.00023366455000007136,
+      "sharpe": -0.04613658957734963,
+      "collapsed": true
+    },
+    {
+      "train": [
+        441,
+        1197
+      ],
+      "test": [
+        1197,
+        1323
+      ],
+      "oos_days": 126,
+      "trade_count": 2,
+      "final_equity": 997.5652939,
+      "total_return": -0.0024347060999999714,
+      "sharpe": -0.45206431155379206,
+      "collapsed": true
+    },
+    {
+      "train": [
+        504,
+        1260
+      ],
+      "test": [
+        1260,
+        1386
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 991.17012365,
+      "total_return": -0.00882987634999995,
+      "sharpe": -2.878204665887743,
+      "collapsed": true
+    },
+    {
+      "train": [
+        567,
+        1323
+      ],
+      "test": [
+        1323,
+        1449
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1002.3741315999999,
+      "total_return": 0.0023741315999999415,
+      "sharpe": 0.4958042068669081,
+      "collapsed": false
+    },
+    {
+      "train": [
+        630,
+        1386
+      ],
+      "test": [
+        1386,
+        1512
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1007.96034635,
+      "total_return": 0.007960346350000008,
+      "sharpe": 1.861082656782607,
+      "collapsed": false
+    },
+    {
+      "train": [
+        693,
+        1449
+      ],
+      "test": [
+        1449,
+        1575
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1001.3412734999999,
+      "total_return": 0.001341273499999943,
+      "sharpe": 0.2882832898198505,
+      "collapsed": false
+    },
+    {
+      "train": [
+        756,
+        1512
+      ],
+      "test": [
+        1512,
+        1638
+      ],
+      "oos_days": 126,
+      "trade_count": 4,
+      "final_equity": 978.57988305,
+      "total_return": -0.021420116949999964,
+      "sharpe": -3.2656633111422826,
+      "collapsed": true
+    },
+    {
+      "train": [
+        819,
+        1575
+      ],
+      "test": [
+        1575,
+        1701
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 994.0056943000001,
+      "total_return": -0.005994305699999927,
+      "sharpe": -1.01088269623292,
+      "collapsed": true
+    },
+    {
+      "train": [
+        882,
+        1638
+      ],
+      "test": [
+        1638,
+        1764
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1005.1483665000001,
+      "total_return": 0.005148366500000065,
+      "sharpe": 0.7957906887000694,
+      "collapsed": false
+    },
+    {
+      "train": [
+        945,
+        1701
+      ],
+      "test": [
+        1701,
+        1827
+      ],
+      "oos_days": 126,
+      "trade_count": 2,
+      "final_equity": 1003.57566,
+      "total_return": 0.0035756599999999705,
+      "sharpe": 0.8327843919050275,
+      "collapsed": false
+    },
+    {
+      "train": [
+        1008,
+        1764
+      ],
+      "test": [
+        1764,
+        1890
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1004.7431205,
+      "total_return": 0.004743120500000032,
+      "sharpe": 1.368972471371021,
+      "collapsed": false
+    },
+    {
+      "train": [
+        1071,
+        1827
+      ],
+      "test": [
+        1827,
+        1953
+      ],
+      "oos_days": 126,
+      "trade_count": 2,
+      "final_equity": 1001.5724255,
+      "total_return": 0.0015724255000000085,
+      "sharpe": 0.40459642679291485,
+      "collapsed": false
+    },
+    {
+      "train": [
+        1134,
+        1890
+      ],
+      "test": [
+        1890,
+        2016
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1006.2488940000001,
+      "total_return": 0.006248894000000064,
+      "sharpe": 1.4166983425447721,
+      "collapsed": false
+    },
+    {
+      "train": [
+        1197,
+        1953
+      ],
+      "test": [
+        1953,
+        2079
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1009.9488934999999,
+      "total_return": 0.00994889349999994,
+      "sharpe": 1.7561295971239235,
+      "collapsed": false
+    },
+    {
+      "train": [
+        1260,
+        2016
+      ],
+      "test": [
+        2016,
+        2142
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 993.923855,
+      "total_return": -0.006076144999999997,
+      "sharpe": -1.0395168051262147,
+      "collapsed": true
+    },
+    {
+      "train": [
+        1323,
+        2079
+      ],
+      "test": [
+        2079,
+        2205
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1006.9337969999999,
+      "total_return": 0.0069337969999999135,
+      "sharpe": 1.3027163389167158,
+      "collapsed": false
+    },
+    {
+      "train": [
+        1386,
+        2142
+      ],
+      "test": [
+        2142,
+        2268
+      ],
+      "oos_days": 126,
+      "trade_count": 2,
+      "final_equity": 1000.8396605,
+      "total_return": 0.0008396605000000364,
+      "sharpe": 0.1508784866430548,
+      "collapsed": false
+    },
+    {
+      "train": [
+        1449,
+        2205
+      ],
+      "test": [
+        2205,
+        2331
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1004.966944,
+      "total_return": 0.004966944000000012,
+      "sharpe": 0.9253606790790466,
+      "collapsed": false
+    },
+    {
+      "train": [
+        1512,
+        2268
+      ],
+      "test": [
+        2268,
+        2394
+      ],
+      "oos_days": 126,
+      "trade_count": 2,
+      "final_equity": 1004.6198475,
+      "total_return": 0.004619847499999992,
+      "sharpe": 0.952563432872172,
+      "collapsed": false
+    },
+    {
+      "train": [
+        1575,
+        2331
+      ],
+      "test": [
+        2331,
+        2457
+      ],
+      "oos_days": 126,
+      "trade_count": 5,
+      "final_equity": 992.9347425,
+      "total_return": -0.007065257500000029,
+      "sharpe": -1.2165225774504018,
+      "collapsed": true
+    },
+    {
+      "train": [
+        1638,
+        2394
+      ],
+      "test": [
+        2394,
+        2520
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1002.4222465,
+      "total_return": 0.0024222465000000282,
+      "sharpe": 0.33417645354879416,
+      "collapsed": false
+    },
+    {
+      "train": [
+        1701,
+        2457
+      ],
+      "test": [
+        2457,
+        2583
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1000.3188285,
+      "total_return": 0.0003188284999999951,
+      "sharpe": 0.05381856992525897,
+      "collapsed": false
+    },
+    {
+      "train": [
+        1764,
+        2520
+      ],
+      "test": [
+        2520,
+        2646
+      ],
+      "oos_days": 126,
+      "trade_count": 4,
+      "final_equity": 999.1352115000001,
+      "total_return": -0.0008647884999999178,
+      "sharpe": -0.17769057249032136,
+      "collapsed": true
+    },
+    {
+      "train": [
+        1827,
+        2583
+      ],
+      "test": [
+        2583,
+        2709
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1002.15941,
+      "total_return": 0.0021594099999999797,
+      "sharpe": 0.4538470296867798,
+      "collapsed": false
+    },
+    {
+      "train": [
+        1890,
+        2646
+      ],
+      "test": [
+        2646,
+        2772
+      ],
+      "oos_days": 126,
+      "trade_count": 2,
+      "final_equity": 996.59039,
+      "total_return": -0.0034096100000000434,
+      "sharpe": -0.4805979331109883,
+      "collapsed": true
+    },
+    {
+      "train": [
+        1953,
+        2709
+      ],
+      "test": [
+        2709,
+        2835
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1009.2375314999999,
+      "total_return": 0.009237531499999932,
+      "sharpe": 1.5578237364056877,
+      "collapsed": false
+    },
+    {
+      "train": [
+        2016,
+        2772
+      ],
+      "test": [
+        2772,
+        2898
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1009.8380104999999,
+      "total_return": 0.009838010499999881,
+      "sharpe": 1.208912137885101,
+      "collapsed": false
+    },
+    {
+      "train": [
+        2079,
+        2835
+      ],
+      "test": [
+        2835,
+        2961
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 996.7803954999999,
+      "total_return": -0.0032196045000000596,
+      "sharpe": -0.6742821270111055,
+      "collapsed": true
+    },
+    {
+      "train": [
+        2142,
+        2898
+      ],
+      "test": [
+        2898,
+        3024
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1016.891447,
+      "total_return": 0.016891446999999973,
+      "sharpe": 3.29987014976591,
+      "collapsed": false
+    },
+    {
+      "train": [
+        2205,
+        2961
+      ],
+      "test": [
+        2961,
+        3087
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1006.2748520000001,
+      "total_return": 0.006274852000000123,
+      "sharpe": 1.1211952224849653,
+      "collapsed": false
+    },
+    {
+      "train": [
+        2268,
+        3024
+      ],
+      "test": [
+        3024,
+        3150
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1007.1112065,
+      "total_return": 0.00711120649999998,
+      "sharpe": 1.0844490864696408,
+      "collapsed": false
+    },
+    {
+      "train": [
+        2331,
+        3087
+      ],
+      "test": [
+        3087,
+        3213
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1017.4479915,
+      "total_return": 0.017447991499999944,
+      "sharpe": 3.135162622713597,
+      "collapsed": false
+    },
+    {
+      "train": [
+        2394,
+        3150
+      ],
+      "test": [
+        3150,
+        3276
+      ],
+      "oos_days": 126,
+      "trade_count": 2,
+      "final_equity": 1015.6554140000001,
+      "total_return": 0.015655414000000065,
+      "sharpe": 1.1641657421568308,
+      "collapsed": false
+    },
+    {
+      "train": [
+        2457,
+        3213
+      ],
+      "test": [
+        3213,
+        3339
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1010.2475115,
+      "total_return": 0.010247511499999973,
+      "sharpe": 1.7451320812763857,
+      "collapsed": false
+    },
+    {
+      "train": [
+        2520,
+        3276
+      ],
+      "test": [
+        3276,
+        3402
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1018.24687,
+      "total_return": 0.018246869999999943,
+      "sharpe": 2.2778241619257207,
+      "collapsed": false
+    },
+    {
+      "train": [
+        2583,
+        3339
+      ],
+      "test": [
+        3339,
+        3465
+      ],
+      "oos_days": 126,
+      "trade_count": 2,
+      "final_equity": 995.758747,
+      "total_return": -0.004241253000000029,
+      "sharpe": -0.4156910970605724,
+      "collapsed": true
+    },
+    {
+      "train": [
+        2646,
+        3402
+      ],
+      "test": [
+        3402,
+        3528
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1008.126581,
+      "total_return": 0.008126580999999987,
+      "sharpe": 1.9371195787640099,
+      "collapsed": false
+    },
+    {
+      "train": [
+        2709,
+        3465
+      ],
+      "test": [
+        3465,
+        3591
+      ],
+      "oos_days": 126,
+      "trade_count": 2,
+      "final_equity": 1003.8165160000001,
+      "total_return": 0.003816516000000092,
+      "sharpe": 0.36659423103035843,
+      "collapsed": false
+    },
+    {
+      "train": [
+        2772,
+        3528
+      ],
+      "test": [
+        3528,
+        3654
+      ],
+      "oos_days": 126,
+      "trade_count": 4,
+      "final_equity": 990.8647375,
+      "total_return": -0.009135262499999953,
+      "sharpe": -0.7251803627040683,
+      "collapsed": true
+    },
+    {
+      "train": [
+        2835,
+        3591
+      ],
+      "test": [
+        3591,
+        3717
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1015.102997,
+      "total_return": 0.01510299699999996,
+      "sharpe": 1.673746627747921,
+      "collapsed": false
+    },
+    {
+      "train": [
+        2898,
+        3654
+      ],
+      "test": [
+        3654,
+        3780
+      ],
+      "oos_days": 126,
+      "trade_count": 2,
+      "final_equity": 993.0131529999999,
+      "total_return": -0.006986847000000125,
+      "sharpe": -0.3346553585795352,
+      "collapsed": true
+    },
+    {
+      "train": [
+        2961,
+        3717
+      ],
+      "test": [
+        3717,
+        3843
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 985.7114509999999,
+      "total_return": -0.014288549000000103,
+      "sharpe": -0.6452543039686987,
+      "collapsed": true
+    },
+    {
+      "train": [
+        3024,
+        3780
+      ],
+      "test": [
+        3780,
+        3906
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1064.1865275,
+      "total_return": 0.0641865275,
+      "sharpe": 3.0173413135827403,
+      "collapsed": false
+    },
+    {
+      "train": [
+        3087,
+        3843
+      ],
+      "test": [
+        3843,
+        3969
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1022.187764,
+      "total_return": 0.022187764000000016,
+      "sharpe": 1.015484487178414,
+      "collapsed": false
+    },
+    {
+      "train": [
+        3150,
+        3906
+      ],
+      "test": [
+        3906,
+        4032
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1020.1238040000001,
+      "total_return": 0.020123804000000065,
+      "sharpe": 1.0552921744393167,
+      "collapsed": false
+    },
+    {
+      "train": [
+        3213,
+        3969
+      ],
+      "test": [
+        3969,
+        4095
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1025.716155,
+      "total_return": 0.02571615500000007,
+      "sharpe": 1.2949513965060042,
+      "collapsed": false
+    },
+    {
+      "train": [
+        3276,
+        4032
+      ],
+      "test": [
+        4032,
+        4158
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1034.4892435000002,
+      "total_return": 0.034489243500000155,
+      "sharpe": 2.375138729160738,
+      "collapsed": false
+    },
+    {
+      "train": [
+        3339,
+        4095
+      ],
+      "test": [
+        4095,
+        4221
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 982.1903834999999,
+      "total_return": -0.017809616500000063,
+      "sharpe": -0.9944956515920489,
+      "collapsed": true
+    },
+    {
+      "train": [
+        3402,
+        4158
+      ],
+      "test": [
+        4158,
+        4284
+      ],
+      "oos_days": 126,
+      "trade_count": 2,
+      "final_equity": 973.1742610000001,
+      "total_return": -0.026825738999999883,
+      "sharpe": -1.1651011206057929,
+      "collapsed": true
+    },
+    {
+      "train": [
+        3465,
+        4221
+      ],
+      "test": [
+        4221,
+        4347
+      ],
+      "oos_days": 126,
+      "trade_count": 2,
+      "final_equity": 962.7959054999999,
+      "total_return": -0.03720409450000011,
+      "sharpe": -1.7644815543831576,
+      "collapsed": true
+    },
+    {
+      "train": [
+        3528,
+        4284
+      ],
+      "test": [
+        4284,
+        4410
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 986.0085745,
+      "total_return": -0.013991425499999991,
+      "sharpe": -0.852275240923861,
+      "collapsed": true
+    },
+    {
+      "train": [
+        3591,
+        4347
+      ],
+      "test": [
+        4347,
+        4473
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 967.881486,
+      "total_return": -0.03211851400000001,
+      "sharpe": -1.361577891732828,
+      "collapsed": true
+    },
+    {
+      "train": [
+        3654,
+        4410
+      ],
+      "test": [
+        4410,
+        4536
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 982.8673685000001,
+      "total_return": -0.017132631499999888,
+      "sharpe": -0.7325260397345043,
+      "collapsed": true
+    },
+    {
+      "train": [
+        3717,
+        4473
+      ],
+      "test": [
+        4473,
+        4599
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 992.3998039999999,
+      "total_return": -0.007600196000000096,
+      "sharpe": -0.37588735609202406,
+      "collapsed": true
+    },
+    {
+      "train": [
+        3780,
+        4536
+      ],
+      "test": [
+        4536,
+        4662
+      ],
+      "oos_days": 126,
+      "trade_count": 2,
+      "final_equity": 1032.828066,
+      "total_return": 0.03282806600000004,
+      "sharpe": 1.9248477294387387,
+      "collapsed": false
+    },
+    {
+      "train": [
+        3843,
+        4599
+      ],
+      "test": [
+        4599,
+        4725
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1004.7732879999999,
+      "total_return": 0.004773287999999866,
+      "sharpe": 0.6380049579260548,
+      "collapsed": false
+    },
+    {
+      "train": [
+        3906,
+        4662
+      ],
+      "test": [
+        4662,
+        4788
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1056.2033205,
+      "total_return": 0.056203320500000015,
+      "sharpe": 2.993743612985055,
+      "collapsed": false
+    },
+    {
+      "train": [
+        3969,
+        4725
+      ],
+      "test": [
+        4725,
+        4851
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1011.4992795000001,
+      "total_return": 0.011499279500000056,
+      "sharpe": 0.6124695821400344,
+      "collapsed": false
+    },
+    {
+      "train": [
+        4032,
+        4788
+      ],
+      "test": [
+        4788,
+        4914
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 1001.3458540000001,
+      "total_return": 0.001345854000000145,
+      "sharpe": 0.07891084420199734,
+      "collapsed": false
+    },
+    {
+      "train": [
+        4095,
+        4851
+      ],
+      "test": [
+        4851,
+        4977
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1056.6315495000001,
+      "total_return": 0.05663154950000012,
+      "sharpe": 2.4671878818126003,
+      "collapsed": false
+    },
+    {
+      "train": [
+        4158,
+        4914
+      ],
+      "test": [
+        4914,
+        5040
+      ],
+      "oos_days": 126,
+      "trade_count": 4,
+      "final_equity": 963.9019000000001,
+      "total_return": -0.03609809999999993,
+      "sharpe": -1.262079986776558,
+      "collapsed": true
+    },
+    {
+      "train": [
+        4221,
+        4977
+      ],
+      "test": [
+        4977,
+        5103
+      ],
+      "oos_days": 126,
+      "trade_count": 3,
+      "final_equity": 974.3045624999999,
+      "total_return": -0.02569543750000014,
+      "sharpe": -1.1201038421382572,
+      "collapsed": true
+    },
+    {
+      "train": [
+        4284,
+        5040
+      ],
+      "test": [
+        5040,
+        5166
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1057.183575,
+      "total_return": 0.05718357500000002,
+      "sharpe": 2.2857201545053956,
+      "collapsed": false
+    },
+    {
+      "train": [
+        4347,
+        5103
+      ],
+      "test": [
+        5103,
+        5229
+      ],
+      "oos_days": 126,
+      "trade_count": 1,
+      "final_equity": 1045.200945,
+      "total_return": 0.04520094500000005,
+      "sharpe": 1.5277005265535943,
+      "collapsed": false
+    }
+  ],
+  "aggregate": {
+    "mean_total_return": 0.004665737600714288,
+    "mean_sharpe": 0.45654863946982377,
+    "collapse_count": 26,
+    "collapse_ratio": 0.37142857142857144,
+    "oos_days_total": 8820,
+    "trades_total": 158
+  },
+  "schema": "edge_lab.walkforward.v2",
+  "metadata": {
+    "run_timestamp_utc": "2026-03-01T02:34:15.866993+00:00",
+    "config_hash": "52877ac0c2bc750cbe61ae8707e2ac424e0fc9ca21a306accfa692da5deaf87d",
+    "git_commit": "f73a35a52147f8cfc7c8725778ab4e70cfe99818",
+    "holdout_tag": "vaulted-holdout-v1",
+    "dataset_id": "stooq-spy-daily",
+    "seeds": [
+      11,
+      23,
+      47
+    ],
+    "run_mode": "dev",
+    "holdout_enforced": false,
+    "holdout_ledger_entry_id": null
+  },
+  "validity": {
+    "min_windows": 8,
+    "observed_windows": 70,
+    "min_oos_days": 120,
+    "observed_oos_days": 8820,
+    "min_trades_total": 200,
+    "observed_trades_total": 158,
+    "min_trades_per_window": 20,
+    "observed_trades_per_window": [
+      3,
+      2,
+      2,
+      1,
+      3,
+      1,
+      2,
+      2,
+      3,
+      3,
+      1,
+      3,
+      4,
+      1,
+      3,
+      2,
+      1,
+      2,
+      1,
+      1,
+      3,
+      3,
+      2,
+      1,
+      2,
+      5,
+      3,
+      3,
+      4,
+      3,
+      2,
+      3,
+      3,
+      3,
+      1,
+      3,
+      1,
+      3,
+      2,
+      3,
+      1,
+      2,
+      1,
+      2,
+      4,
+      3,
+      2,
+      3,
+      1,
+      3,
+      1,
+      1,
+      1,
+      3,
+      2,
+      2,
+      1,
+      3,
+      3,
+      3,
+      2,
+      3,
+      1,
+      3,
+      3,
+      1,
+      4,
+      3,
+      1,
+      1
+    ],
+    "pass": false,
+    "failed_reasons": [
+      "INSUFFICIENT_TRADES_TOTAL",
+      "INSUFFICIENT_TRADES_PER_WINDOW"
+    ]
+  },
+  "status": "INVALID",
+  "promotable": false,
+  "collapse_pass": true
+}

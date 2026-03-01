@@ -1,0 +1,38 @@
+{
+  "schema": "edge_lab.regime_split.v2",
+  "metadata": {
+    "run_timestamp_utc": "2026-03-01T02:34:16.807187+00:00",
+    "config_hash": "0b6304b4213f410ef63e5df5f3135cde2e004e5c46abfd83ec3ede6c9be5436b",
+    "git_commit": "f73a35a52147f8cfc7c8725778ab4e70cfe99818",
+    "holdout_tag": "vaulted-holdout-v1",
+    "dataset_id": "stooq-spy-daily",
+    "seeds": [
+      11,
+      23,
+      47
+    ],
+    "run_mode": "dev",
+    "holdout_enforced": false,
+    "holdout_ledger_entry_id": null
+  },
+  "regimes": {
+    "calm": {
+      "count": 2201,
+      "metrics": {
+        "total_return": 0.58197780745,
+        "max_drawdown": -0.008633485139208693,
+        "sharpe": 2.4188026928123274
+      },
+      "final_equity": 1581.97780745
+    },
+    "stress": {
+      "count": 3083,
+      "metrics": {
+        "total_return": 0.39609543849999956,
+        "max_drawdown": -0.10051292299335376,
+        "sharpe": 0.6802604492557989
+      },
+      "final_equity": 1396.0954384999995
+    }
+  }
+}

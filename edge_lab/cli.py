@@ -12,6 +12,7 @@ from edge_lab.reporting.vault import append_holdout_ledger, enforce_freeze, ensu
 from edge_lab.robustness.perturb import add_noise
 from edge_lab.robustness.regimes import split_regimes
 from edge_lab.robustness.stability import evaluate_stability_gate
+from edge_lab.strategies.churn import ChurnStrategy
 from edge_lab.strategies.moving_average import MovingAverageStrategy
 from edge_lab.walkforward import run_walkforward
 
@@ -30,6 +31,8 @@ def _period_returns(equity_curve):
 def _build_strategy(cfg):
     if cfg.name == "moving_average":
         return MovingAverageStrategy(**cfg.params)
+    if cfg.name == "churn":
+        return ChurnStrategy()
     raise ValueError(f"Unknown strategy: {cfg.name}")
 
 
